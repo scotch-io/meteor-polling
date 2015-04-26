@@ -1,17 +1,26 @@
-<body class="container">
+<body>
+
+    <div class="page-header text-center">
+        <h1>A Simple Meteor.js Real-Time Polling Application</h1>
+        <p>View the <a href="https://scotch.io/tutorials/learn-meteor-js-from-scratch-build-a-polling-app">tutorial</a> by <a href="https://scotch.io">scotch.io</a>.</p>
+    </div>
+   
 
     <!-- PULL IN THE POLL CREATION FORM -->
-    <div class="row">
-    <div class="col-md-6 col-md-offset-3">
-        {{ >pollForm }}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                {{ >pollForm }}
+            </div>
+        </div>
     </div>
-    </div>
-
+    
     <!-- LOOP OVER POLLS AND SHOW EACH -->
     <div class="polls">
-        {{ #each polls this }}
+        {{ #each polls }}
             {{ >poll }}
         {{ /each }}
     </div>
 
+<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=scotchio" id="_carbonads_js"></script>
 </body>

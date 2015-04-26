@@ -1,11 +1,11 @@
 <template name="poll">
 
-<div class="poll well well-lg">
+<div class="poll well well-lg" data-id="{{ _id }}">
     
     <h3 class="text-center">{{ question }}</h3>
 
-    {{ #each choices }}
-        <a href="#" class="vote btn btn-primary btn-block" data-id="1">
+    {{ #each indexedArray choices }}
+        <a href="#" class="vote btn btn-primary btn-block" data-id="{{ _index }}">
             <span class="votes pull-right">{{ votes }}</span>
             <span class="text">{{ text }}</span>
         </a>
