@@ -1,0 +1,11 @@
+body 	{
+	padding-top:50px; 
+}
+.polls 	{
+	display:flex;
+	flex-flow:row wrap;
+}
+.poll 	{
+	width:30%;
+	margin:20px;
+}

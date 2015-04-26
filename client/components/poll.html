@@ -1,0 +1,15 @@
+<template name="poll">
+
+<div class="poll well well-lg">
+    
+    <h3 class="text-center">{{ question }}</h3>
+
+    {{ #each choices }}
+        <a href="#" class="vote btn btn-primary btn-block" data-id="1">
+            <span class="votes pull-right">{{ votes }}</span>
+            <span class="text">{{ text }}</span>
+        </a>
+    {{ /each }}
+    
+</div>
+</template>
