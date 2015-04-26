@@ -4,8 +4,9 @@ body 	{
 .polls 	{
 	display:flex;
 	flex-flow:row wrap;
+	justify-content:center;
 }
 .poll 	{
-	width:30%;
+	width:25%;
 	margin:20px;
 }
